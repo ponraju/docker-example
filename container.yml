@@ -8,6 +8,6 @@
     - name: remove container
       shell: docker rm raj
     - name: remove image
-      shell: docker rmi ponraj0204/raj:latest
+      shell: docker rmi ponraj0204/raj
     - name: create docker container
-      shell: docker run -d --name raj -p 1234:8080 ponraj0204/raj:latest
+      shell: docker run -d --name raj -p 1234:8080 ponraj0204/raj
