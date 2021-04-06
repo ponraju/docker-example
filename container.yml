@@ -4,10 +4,10 @@
   hosts: all
   tasks: 
     - name: stop the container
-      shell: docker stop Ansible Projects
+      shell: docker stop sathish
     - name: remove container
-      shell: docker rm Ansible Projects
+      shell: docker rm sathish
     - name: remove image
       shell: docker rmi ponraj0204/Ansible Projects:latest
     - name: create docker container
-      shell: docker run -d --name Ansible Projects:latest -p 1234:8080 ponraj0204/Ansible Projects:latest
+      shell: docker run -d --name sathish:latest -p 1234:8080 ponraj0204/Ansible Projects:latest
